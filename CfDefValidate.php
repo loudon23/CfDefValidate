@@ -25,10 +25,10 @@ class CfDefValidatePlugin extends MantisPlugin {
         global $g_custom_field_type_definition;
 
         // 커스텀필드의 출력 함수들 재 정의
-        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_STRING]['#function_print_input'] = 'CustomCfDefPlugin::cfdef_input_textbox';
-        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_NUMERIC]['#function_print_input'] = 'CustomCfDefPlugin::cfdef_input_textbox';
-        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_FLOAT]['#function_print_input'] = 'CustomCfDefPlugin::cfdef_input_textbox';
-        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_EMAIL]['#function_print_input'] = 'CustomCfDefPlugin::cfdef_input_textbox';
+        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_STRING]['#function_print_input'] = 'CfDefValidatePlugin::cfdef_input_textbox';
+        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_NUMERIC]['#function_print_input'] = 'CfDefValidatePlugin::cfdef_input_textbox';
+        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_FLOAT]['#function_print_input'] = 'CfDefValidatePlugin::cfdef_input_textbox';
+        $g_custom_field_type_definition[CUSTOM_FIELD_TYPE_EMAIL]['#function_print_input'] = 'CfDefValidatePlugin::cfdef_input_textbox';
 
         return array();
     }
