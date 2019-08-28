@@ -18,7 +18,7 @@ class CfDefValidatePlugin extends MantisPlugin {
         );
         $this->author = 'loudon23';
         $this->contact = 'loudon23@naver.com';
-        $this->url = 'github.com/loudon23';
+        $this->url = 'https://github.com/loudon23';
     }
 
     function config() {
